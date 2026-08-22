@@ -2,6 +2,10 @@
 int main() 
 {
     int a = 10;
-    printf("%d\n" , a);
-    return 0;
+float b = 5.5;
+char c = 'A';
+
+printf("%d", a);
+printf("%f", b);
+printf("%c", c);
 }
