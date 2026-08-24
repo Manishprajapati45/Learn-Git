@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main() 
 {
-    int a = 10;
-float b = 5.5;
-char c = 'A';
+    int a = 5;
+    int b = 2;
 
-printf("%d", a);
-printf("%f", b);
-printf("%c", c);
+    float result = (float)a / b;
+    printf("Result: %f\n", result);
+    return 0;
 }
