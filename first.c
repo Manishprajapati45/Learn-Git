@@ -1,11 +1,9 @@
 #include <stdio.h>
 int main() 
 {
-    int age; //variable declaration
-    age = 18; //variable initialization
-    char character = 'A'; //combinationn of declaration and initialization
-    age = 25;
-    printf("%i\n", age);
-    printf("%c\n", character);
+    int abc = 19;
+    int ABC = 20;
+    printf("%i\n", abc);
+    printf("%i\n", ABC);
     return 0;
 }
