@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main() 
 {
-    int a = 5;
-    int b = 2;
-
-    float result = (float)a / b;
-    printf("Result: %f\n", result);
+    int age; //variable declaration
+    age = 18; //variable initialization
+    char character = 'A'; //combinationn of declaration and initialization
+    age = 25;
+    printf("%i\n", age);
+    printf("%c\n", character);
     return 0;
 }
