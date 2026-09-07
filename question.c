@@ -1,11 +1,12 @@
-//Calculate Area of rectangle 
-// take length and breadth as input and print area.
+//Create a program that:
+
+//Declares a character variable named symbol
+//Assigns the character '@' to this variable
+//Prints the message "The symbol is: @" where @ is the value of your variable
 #include <stdio.h>
 int main()
 {
-    int l = 10;
-    int b = 7;
-    int area = l*b;
-    printf("Area of rectangle is = %d\n", area);
+    char symbol = '@';
+    printf("The symbol is: %c\n", symbol);
     return 0;
 }
