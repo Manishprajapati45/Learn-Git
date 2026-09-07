@@ -1,12 +1,13 @@
-//Create a program that:
-
-//Declares a character variable named symbol
-//Assigns the character '@' to this variable
-//Prints the message "The symbol is: @" where @ is the value of your variable
+//hen, create a program that checks whether the person is old enough to drive (age 18 or older).\
+Store the result (either 0 for false or 1 for true) in a variable called canDrive, and print both the age and the re
 #include <stdio.h>
-int main()
-{
-    char symbol = '@';
-    printf("The symbol is: %c\n", symbol);
+
+int main() {
+    // Your code here: replace the zero with the age the task asks for
+    int age = 16;
+    // Your code here: replace the zero with the comparison that decides if the person is old enough to drive
+    int canDrive = (age >= 18);
+    printf("Age: %d\n", age);
+    printf("Can drive? %d\n", canDrive);
     return 0;
 }
