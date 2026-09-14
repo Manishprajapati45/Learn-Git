@@ -10,7 +10,7 @@ int main() {
     printf("Enter your age: ");
     scanf("%d", &age);
 
-    printf("Hello %s, you are %d years old.\n", name, age);
+    printf("Hello \"%s\", you are %d years old.\n", name, age);
 
     return 0;
 
