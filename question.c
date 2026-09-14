@@ -1,4 +1,4 @@
-//calculator (+,-,*,/)
+//Take two intergers a & b from user. Print their sum with messege on the console.
 
 
 #include <stdio.h>
@@ -9,12 +9,6 @@ int main() {
     printf("Enter b: ");
     scanf("%d", &b);
     int Sum = a + b;
-    int substract = a - b;
-    int multiply = a * b;
-    int divide = a/b;
-    printf("Sum: %d\n",Sum);
-    printf("Substraction: %d\n",substract);
-    printf("Multiply: %d\n",multiply);
-    printf("Divide: %d\n",divide);
+    printf("The Sum of %d and %d is %d\n", a,b,Sum);
     return 0;
 }
