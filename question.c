@@ -1,14 +1,13 @@
-//Take two intergers a & b from user. Print their sum with messege on the console.
+//take two integers a & b from user and print the value after swap their values.
 
 
 #include <stdio.h>
 int main() {
-    int a, b, c;
-    printf("Enter a: ");
-    scanf("%d", &a);
-    printf("Enter b: ");
-    scanf("%d", &b);
-    int Sum = a + b;
-    printf("The Sum of %d and %d is %d\n", a,b,Sum);
+    int a = 5, b = 10, temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
     return 0;
 }
