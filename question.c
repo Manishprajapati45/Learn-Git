@@ -1,17 +1,17 @@
-//take two integers a & b from user and print the value after swap their values.
-
+//take name and age of user as input and print with "Hello 'name', you are 'age', years old.".
 
 #include <stdio.h>
 int main() {
-    int a, b;
-    printf("Enter first no: ");
-    scanf("%d", &a);
-    printf("Enter second no: ");
-    scanf("%d", &b);
+    char name[50];
+    int age;
 
-    a = a + b;
-    b = a - b;
-    a = a - b;
-    printf("After Swaping a = %d and b = %d\n", a ,b);
+    printf("Enter your name: ");
+    scanf("%s", name);
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Hello %s, you are %d years old.\n", name, age);
+
     return 0;
+
 }
