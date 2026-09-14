@@ -3,11 +3,15 @@
 
 #include <stdio.h>
 int main() {
-    int a = 5, b = 10, temp;
-    temp = a;
-    a = b;
-    b = temp;
-    printf("a = %d\n", a);
-    printf("b = %d\n", b);
+    int a, b;
+    printf("Enter first no: ");
+    scanf("%d", &a);
+    printf("Enter second no: ");
+    scanf("%d", &b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("After Swaping a = %d and b = %d\n", a ,b);
     return 0;
 }
