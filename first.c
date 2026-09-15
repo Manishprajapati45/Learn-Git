@@ -2,17 +2,16 @@
 
 int main() {
     //Write your code here
-    int a, b;
+    float radius;
 
-    scanf("%d %d", &a, &b);
+    scanf("%f", &radius);
 
-    printf("The sum of %d and %d = %d\n", a, b, a + b);
+    float pi = 3.1416;
+
+    float area = pi * radius * radius;
+    float perimeter = 2 * pi * radius;
+
+    printf("Area: %.2f, Perimeter: %.2f\n",area, perimeter);
     
-    printf("The subtraction of %d and %d = %d\n", a, b, a - b);
-
-    printf("The product of %d and %d = %d\n", a, b, a * b);
-
-    printf("The division of %d and %d = %d\n", a, b, a / b);
-
     return 0;
 }
