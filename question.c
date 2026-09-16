@@ -1,17 +1,16 @@
-//write a program that calculate compound interest(CI).
+//write a program that convert given no into minutes.
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     //Write your code here
-    double P, R, T;
+    int hours;
 
-    scanf("%lf %lf %lf", &P, &R, &T);
+    scanf("%d", &hours);
 
-    double CI = P * pow((1 + R / 100), T) - P;
+    int minutes = hours * 60;
 
-    printf("%.2lf\n", CI);
-    
+    printf("%d minutes\n", minutes);
+
     return 0;
 }
