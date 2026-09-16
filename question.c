@@ -1,20 +1,17 @@
-//take user name, age and grade as input and print with jhon is 14 years old and scored 9.5 grade.
+//write a program that calculate compound interest(CI).
 
 #include <stdio.h>
+#include <math.h>
+
 int main() {
-    char name[50];
-    int age;
-    float grade;
+    //Write your code here
+    double P, R, T;
 
-    printf("Enter your name: ");
-    scanf("%s", name);
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("Enter your grade: ");
-    scanf("%f", &grade);
+    scanf("%lf %lf %lf", &P, &R, &T);
 
-    printf("%s is %d years old and scored %.2f grade\n", name, age, grade);
+    double CI = P * pow((1 + R / 100), T) - P;
 
+    printf("%.2lf\n", CI);
+    
     return 0;
-
 }
