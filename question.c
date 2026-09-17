@@ -1,16 +1,18 @@
-//write a program that convert given no into minutes.
-
+//Calculate A raise to the power B
 #include <stdio.h>
 
 int main() {
-    //Write your code here
-    int hours;
+    //Write your code here 
+    int a, b;
 
-    scanf("%d", &hours);
+    scanf("%d, %d", &a, &b);
 
-    int minutes = hours * 60;
+    int result = 1;
+    for (int i = 1; i <= b; i++) {
+        result *= a;
+    }
 
-    printf("%d minutes\n", minutes);
+    printf("%d\n", result);
 
     return 0;
 }
