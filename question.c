@@ -1,16 +1,13 @@
-//Covert celsuis into fahrenheit.
+//loop function code.
 
 #include <stdio.h>
 int main() {
-    float celsius, fahrenheit;
+    int i;
 
-    printf("Enter Temperature in celsius: ");
-    scanf("%f", &celsius);
-    
-    fahrenheit = (9*celsius/5)+32;
+    for(i = 1; i <= 100; i++) {
+        printf("%d\n", i);
 
-    printf("Temperature in fahrenheit = %.2f\n", fahrenheit);
-
+    }
     return 0;
-
+    
 }
