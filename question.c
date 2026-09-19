@@ -1,18 +1,16 @@
-//Calculate A raise to the power B
+//Covert celsuis into fahrenheit.
+
 #include <stdio.h>
-
 int main() {
-    //Write your code here 
-    int a, b;
+    float celsius, fahrenheit;
 
-    scanf("%d, %d", &a, &b);
+    printf("Enter Temperature in celsius: ");
+    scanf("%f", &celsius);
+    
+    fahrenheit = (9*celsius/5)+32;
 
-    int result = 1;
-    for (int i = 1; i <= b; i++) {
-        result *= a;
-    }
-
-    printf("%d\n", result);
+    printf("Temperature in fahrenheit = %.2f\n", fahrenheit);
 
     return 0;
+
 }
