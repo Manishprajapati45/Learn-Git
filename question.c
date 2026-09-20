@@ -1,20 +1,21 @@
-//Take two variable [year and pi] year = 2023 and pi = 3.141590 print the given formate.
-
-
-
+//Write a program that declares and initializes two variables with valid names according to C naming rules.\
+The first variable should be an integer named "userAge" set to 25. The second variable should be a float named "item_price" set to 9.99. \
+Then print both variables using printf in the following format:\
+User age: 25\
+Item price: 9.99
 
 #include <stdio.h>
 
 int main() {
-    // Declare and initialize your variables here
-    int year;
-    float pi;
-    year = 2023;
-    pi = 3.141590;
+    // Declare and initialize two variables with valid names
+    int userAge;
+    float item_price;
 
-    // Your printf statements here
-    printf("The current year is %d\n", year);
-    printf("The value of pi is %f\n", pi);
-
+    userAge = 25;
+    item_price = 9.99;
+    // Print both variables
+    printf("User age: %d\n", userAge);
+    printf("Item price: %.2f\n", item_price);
+    
     return 0;
 }
