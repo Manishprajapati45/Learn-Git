@@ -1,21 +1,41 @@
-//Write a program that declares and initializes two variables with valid names according to C naming rules.\
-The first variable should be an integer named "userAge" set to 25. The second variable should be a float named "item_price" set to 9.99. \
-Then print both variables using printf in the following format:\
-User age: 25\
-Item price: 9.99
+//Create a C program that:\
+Declares and initializes:\
+An integer variable age with value 25\
+A float variable price with value 19.99\
+A character variable grade with value 'A'\
+A constant MAX_SCORE with value 100 using #define\
+Calculate:\
+The price after a 15% discount and store it in a variable discounted_price\
+Convert the discounted_price to an integer using explicit casting, and store as rounded_price\
+Make sure to format floating-point numbers to show exactly 2 decimal places.
+
+
+
 
 #include <stdio.h>
+#include <stdio.h>
+
+#define MAX_SCORE 100
 
 int main() {
-    // Declare and initialize two variables with valid names
-    int userAge;
-    float item_price;
+    // Declare and initialize variables
+    int age = 25;
+    float price = 19.99f;
+    char grade = 'A';
 
-    userAge = 25;
-    item_price = 9.99;
-    // Print both variables
-    printf("User age: %d\n", userAge);
-    printf("Item price: %.2f\n", item_price);
+    // Calculate discounted price
+    float discounted_price = price * 0.85f;
+
+    // Convert to integer using casting
+    int rounded_price = (int)discounted_price;
+
+    // Print all variables
+    printf("Age: %d\n", age);
+    printf("Price: $%.2f\n", price);
+    printf("Discounted Price: $%.2f\n", discounted_price);
+    printf("Rounded Price: $%d\n", rounded_price);
+    printf("Grade: %c\n", grade);
+    printf("Max Score: %d\n", MAX_SCORE);
     
     return 0;
 }
