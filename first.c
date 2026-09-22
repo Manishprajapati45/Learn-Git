@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    double result = 5.65;
-    int grade;
+    double temperature = 98.6;
+    int whole_part = (int) temperature;
     
-    // Use explicit casting to convert result (double) to grade (int)
-    grade = (int)result;
-    
-    printf("The grade is: %d\n", grade);
+    printf("Original temperature: %.1f\n", temperature);
+    printf("Whole part: %d\n", whole_part);
     
     return 0;
 }
