@@ -1,23 +1,19 @@
-//Arithmatic operaters
-
 #include <stdio.h>
 
 int main() {
     // Declare and initialize variables here
-    int num1 = 15;
-    int num2 = 4;
+    int number = 17;
 
-    // Perform calculations
-    int sum = num1 + num2;
-    int difference = num1 - num2;
-    int product = num1 * num2;
-    int quotient = num1 / num2;
+    // Calculate remainder
+    int remainder = number % 5;
+
+    // Check if number is even or odd
+    int is_even = (number % 2 == 0);
 
     // Print results
-    printf("Sum: %d\n", sum);
-    printf("Difference: %d\n", difference);
-    printf("Product: %d\n", product);
-    printf("Quotient: %d\n", quotient);
-
+    printf("Number: %d\n", number);
+    printf("Remainder when divided by 5: %d\n", remainder);
+    printf("%d is even? %d\n", number, is_even);
+    
     return 0;
 }
