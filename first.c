@@ -1,4 +1,4 @@
-// Rational operators
+// Logical operators (part 1).
 
 //. == equal.           1 == 2 returns 0 (false)
 //. != not equal.       1 != 2 returns 1 (true)
