@@ -1,45 +1,34 @@
-// Create a program to decide if it's a good day for solar panel energy production
-
-//Initialize these variables:
-
-//isSunny with the value 1 (true)
-//windSpeed with the value 5.4
-//temperature with the value 23
-//solarPanelOutput with the value 9
-//isCloudy with the value 0 (false)
-//Create one logical expression that checks ALL of these conditions:
-
-//It's sunny
-//The wind speed is less than 10
-//The solar panel output is less than 15
-//The temperature is above 20 OR there are no clouds
-//Print "Good day for solar energy" if all conditions are met, otherwise print "Not ideal for solar energy".
-
-
+//operator question
 
 #include <stdio.h>
 
 int main() {
-    // Initialize variables
-    int isSunny = 1;
-    float windSpeed = 5.4;
-    int temperature = 23;
-    int solarPanelOutput = 9;
-    int isCloudy = 0;
-    
-    // Create the logical expression
-    int isGoodDay = isSunny &&
-                    (windSpeed < 10) &&
-                    (solarPanelOutput < 15) &&
-                    (temperature > 20 || !isCloudy);
+    // Declare and initialize variables
+    int num1 = 25;
+    int num2 = 7;
 
-                    
-    // Don't change below
-    if (isGoodDay) {
-        printf("Good day for solar energy\n");
-    } else {
-        printf("Not ideal for solar energy\n");
-    }
-    
+    // Calculate arithmetic operations
+    int sum = num1 + num2;
+    int difference = num1 - num2;
+    int product = num1 * num2;
+    int quotient = num1 / num2;
+    int remainder = num1 % num2;
+
+    // Print arithmetic results
+    printf("num1 = %d, num2 = %d\n", num1, num2);
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Product: %d\n", product);
+    printf("Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+
+    // Calculate logical operations
+    int result1 = (num1 > num2) && (num1 % 2 == 1);
+    int result2 = (num2 < 10) || (num1 % 2 == 0);
+
+    // Print logical operation results
+    printf("result1: %d\n", result1);
+    printf("result2: %d\n", result2);
+
     return 0;
 }
