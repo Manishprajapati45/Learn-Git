@@ -1,21 +1,19 @@
-//if statement
+//if - else
+
+
 #include <stdio.h>
 
 int main() {
-    int temperature;
-    scanf("%d", &temperature);
-
-    if (temperature > 30) {
-        printf("It's a hot day!\n");
-    } 
+    int score;
+    scanf("%d", &score);
+    // Don't change above this line
     
-    if (temperature <= 30 && temperature >= 20 ) {
-        printf("The weather is nice.\n");
+    // Write your code here
+    if (score >= 60) {
+        printf("Pass\n");
+    } else { 
+        printf("Fail\n");
     }
-    
-    if (temperature < 20) {
-        printf("It's a bit cold today.\n");
-    } 
-    
+
     return 0;
 }
