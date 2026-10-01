@@ -1,34 +1,49 @@
-//operator question
+//control flow question
+
+// Create a program that analyzes a student's numerical score and provides feedback using multiple control flow techniques.
+
+// Your program should implement the following logic:
+
+// If the score is invalid (less than 0 or greater than 100), print "Invalid score" and exit.
+// Use a switch statement to print the letter grade:
+// 90-100: "A"
+// 80-89: "B"
+// 70-79: "C"
+// 60-69: "D"
+// 0-59: “F”
+// Finally, use the ternary operator to print whether the student passed or failed (passing is 60 or above), on its own line in the format Status: Passed or Status: Failed.
 
 #include <stdio.h>
 
 int main() {
-    // Declare and initialize variables
-    int num1 = 25;
-    int num2 = 7;
-
-    // Calculate arithmetic operations
-    int sum = num1 + num2;
-    int difference = num1 - num2;
-    int product = num1 * num2;
-    int quotient = num1 / num2;
-    int remainder = num1 % num2;
-
-    // Print arithmetic results
-    printf("num1 = %d, num2 = %d\n", num1, num2);
-    printf("Sum: %d\n", sum);
-    printf("Difference: %d\n", difference);
-    printf("Product: %d\n", product);
-    printf("Quotient: %d\n", quotient);
-    printf("Remainder: %d\n", remainder);
-
-    // Calculate logical operations
-    int result1 = (num1 > num2) && (num1 % 2 == 1);
-    int result2 = (num2 < 10) || (num1 % 2 == 0);
-
-    // Print logical operation results
-    printf("result1: %d\n", result1);
-    printf("result2: %d\n", result2);
-
+    int score;
+    scanf("%d", &score);
+    
+    if (score < 0 || score > 100) {
+        printf("Invalid score\n");
+        return 0;
+    }
+    
+    switch (score / 10) {
+        case 10:
+        case 9:
+            printf("A\n");
+            break;
+        case 8:
+            printf("B\n");
+            break;
+        case 7:
+            printf("C\n");
+            break;
+        case 6:
+            printf("D\n");
+            break;
+        default:
+            printf("F\n");
+            break;
+    }
+    
+    printf("Status: %s\n", (score >= 60) ? "Passed" : "Failed");
+    
     return 0;
 }
