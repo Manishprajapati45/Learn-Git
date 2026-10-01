@@ -1,32 +1,16 @@
-//Switch case
+//Ternary Conditional Operator
 
 
 #include <stdio.h>
 
 int main() {
-    int grade;
-    scanf("%d", &grade);
-    // Don't change above this line
+    int number;
+    scanf("%d", &number);
     
-    // Write your code here
-    switch (grade / 10) {
-        case 10:
-        case 9:
-            printf("A\n");
-            break;
-        case 8:
-            printf("B\n");
-            break;
-        case 7:
-            printf("C\n");
-            break;
-        case 6:
-            printf("D\n");
-            break;
-        default:
-            printf("F\n");
-            break;    
-    }
-    
+    // Write your code below
+    // Replace the placeholder text with a conditional expression
+    char* result = (number > 0) ? "positive" : (number < 0) ? "negative" : "zero";
+
+    printf("The number is %s\n", result);
     return 0;
 }
