@@ -1,27 +1,32 @@
-// Else - if
+//Switch case
 
 
 #include <stdio.h>
 
 int main() {
-    int temperature;
-    char scale;
-    scanf("%d", &temperature);
-    scanf(" %c", &scale);
+    int grade;
+    scanf("%d", &grade);
     // Don't change above this line
     
     // Write your code here
-    if (scale == 'F') {
-        temperature = (temperature - 32) * 5 / 9;
+    switch (grade / 10) {
+        case 10:
+        case 9:
+            printf("A\n");
+            break;
+        case 8:
+            printf("B\n");
+            break;
+        case 7:
+            printf("C\n");
+            break;
+        case 6:
+            printf("D\n");
+            break;
+        default:
+            printf("F\n");
+            break;    
     }
-    if (temperature < 0) {
-        printf("Freezing\n");
-    } else if (temperature <= 20) {
-        printf("Cold\n");
-    } else if (temperature <= 30) {
-        printf("Pleasant\n");
-    } else {
-        printf("Hot\n");
-    }
+    
     return 0;
 }
