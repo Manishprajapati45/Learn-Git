@@ -1,49 +1,42 @@
-//control flow question
+// Nested if-else question
 
-// Create a program that analyzes a student's numerical score and provides feedback using multiple control flow techniques.
+// Create a program that checks if someone can ride a rollercoaster. The requirements are:
 
-// Your program should implement the following logic:
+// Must be at least 12 years old
+// Must be taller than 150cm
+// If they meet both requirements but are under 15, they need adult supervision
+// Print exactly these messages for each case:
 
-// If the score is invalid (less than 0 or greater than 100), print "Invalid score" and exit.
-// Use a switch statement to print the letter grade:
-// 90-100: "A"
-// 80-89: "B"
-// 70-79: "C"
-// 60-69: "D"
-// 0-59: “F”
-// Finally, use the ternary operator to print whether the student passed or failed (passing is 60 or above), on its own line in the format Status: Passed or Status: Failed.
+// If too young: Sorry, you are too young
+// If not tall enough: Sorry, you are not tall enough
+// If under 15 and no adult: Sorry, you need an adult with you
+// If under 15 with adult: You can ride with adult supervision!
+// If 15 or older and tall enough: You can ride by yourself!
 
 #include <stdio.h>
 
 int main() {
-    int score;
-    scanf("%d", &score);
-    
-    if (score < 0 || score > 100) {
-        printf("Invalid score\n");
-        return 0;
+    int age, height;
+    int hasAdult;
+    scanf("%d %d %d", &age, &height, &hasAdult); // Don't change this line
+
+    // Write your code below
+    if (age >= 12) {
+        if (height > 150) {
+            if (age < 15) {
+                if (hasAdult) {
+                    printf("You can ride with adult supervision!");
+                } else {
+                    printf("Sorry, you need an adult with you");
+                }
+            } else {
+                printf("You can ride by yourself!");
+            }
+        } else {
+            printf("Sorry, you are not tall enough");
+        }
+    } else {
+        printf("Sorry, you are too young");
     }
-    
-    switch (score / 10) {
-        case 10:
-        case 9:
-            printf("A\n");
-            break;
-        case 8:
-            printf("B\n");
-            break;
-        case 7:
-            printf("C\n");
-            break;
-        case 6:
-            printf("D\n");
-            break;
-        default:
-            printf("F\n");
-            break;
-    }
-    
-    printf("Status: %s\n", (score >= 60) ? "Passed" : "Failed");
-    
     return 0;
 }
