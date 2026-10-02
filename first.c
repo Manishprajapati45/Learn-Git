@@ -1,16 +1,20 @@
-//Ternary Conditional Operator
+//Input and output
 
 
 #include <stdio.h>
 
 int main() {
-    int number;
-    scanf("%d", &number);
+    int num = 255;
+    float pi = 3.14159;
+    char letter = 'A';
     
-    // Write your code below
-    // Replace the placeholder text with a conditional expression
-    char* result = (number > 0) ? "positive" : (number < 0) ? "negative" : "zero";
-
-    printf("The number is %s\n", result);
+    // Your code here
+    printf("Decimal: %d\n", num);
+    printf("Hexadecimal: %x\n", num);
+    printf("Octal: %o\n", num);
+    printf("Pi: %.2f\n", pi);
+    printf("Letter: %c\n", letter);
+    printf("ASCII value: %d\n", letter);
+    
     return 0;
 }
