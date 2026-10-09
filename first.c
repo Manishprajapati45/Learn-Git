@@ -1,18 +1,15 @@
-//Input Validation
+//Conditional Statement
 
 #include <stdio.h>
 
-int main() {
-    int number;
-    int result = scanf("%d", &number);
+int main(){
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
     
-    if (result != 1) {
-        printf("Invalid input type!\n");
-    } else if (number < 10 || number > 50) {
-        printf("Out of range!\n");
-    } else {
-        printf("Valid input!\n");
+    if (age > 18){
+        printf("adult\n");
+    } else{
+        printf("Not adult\n");
     }
-    
-    return 0;
 }
