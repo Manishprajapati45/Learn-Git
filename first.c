@@ -1,15 +1,12 @@
-//Conditional Statement
-
+//For Loop
 #include <stdio.h>
 
-int main(){
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    
-    if (age > 18){
-        printf("adult\n");
-    } else{
-        printf("Not adult\n");
+int main() {
+    int n;
+    scanf("%d", &n);
+    // Write your code here
+    for (int i = 1; i <= n; i++) {
+        printf("%d\n", i);
     }
+    return 0;
 }
