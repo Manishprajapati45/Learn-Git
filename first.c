@@ -1,18 +1,18 @@
-//For even number Loop
+//For Loop
 
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    
-    int num = 2;
+    for(int i=1; i<=5; i=i+1) {
+        printf("%d \n", i);
+    }
 
-    // Your code here
-    while (num <= n) {
-        printf("%d \n", num);
-        num += 2;
+    for(float f=1.0; f<=5.0; f=f+1) {
+        printf("%f \n", f);
     }
     
+    for(char ch='a'; ch<='e'; ch=ch+1) {
+        printf("%c \n", ch);
+    }
     return 0;
 }
